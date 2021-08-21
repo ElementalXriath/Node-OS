@@ -2,7 +2,7 @@ ONLINE MODE - OFFLINE MODE - RESTRICTIONS =>
 These modes will be the defining princables when engineering
 a NODEos applications. Offline mode apps must function without the use of external data.
 
-//Buttons Need to be dropdown - array of options directed to ares.
+//Buttons Need to be dropdown - array of options directed to Reactor.
 
 //ui
 -Responsive to precise px to offer mobile xover.
@@ -16,8 +16,8 @@ there dir withing conig_{app_id}.js
 sparatic injections. If a spartic injection is used in the conifig the offline applications,
 the app will wait for a connection and asynchronsly auto populate required fields.
 
-//Ares
--Ares will have the ability to switch frameworks from Material to Boostrap.
+//Reactor
+-Reactor will have the ability to switch frameworks from Material to Boostrap.
 -House the ability to change lang schemes
 -Act as a help node from a desktop perspective, a small icon will emerge when ever 
 a function is decalerd that requires communiction with the back end.
@@ -39,7 +39,7 @@ CACULATOR -
 It will house any and all algos to return the ultimate functionality.
 
 CPU link will be the return put into the stream format to populate the packats 
-passed to ares then the user. 
+passed to Reactor then the user. 
 
 
 

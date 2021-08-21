@@ -14,3 +14,5 @@ Key Features
 - The OS is disgned with modes so the user may acess his desktop even when not only
 by storing the previous state and direction it to a local internal node server.
 - The OS will function in unity with the web its self.
+- Reactor is a custom middle ware that handles all logic and fs 
+bewtween client and server.

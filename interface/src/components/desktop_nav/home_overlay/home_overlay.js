@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Popover, OverlayTrigger, Navbar} from 'react-bootstrap';
-import '../container_nav/cont.css';
+
 import Logo from './logo.png';
 
 const Home_Overlay = (props) => {
@@ -16,7 +16,7 @@ const Home_Overlay = (props) => {
             </Popover>
         }
       >
-        <Button variant="secondary">
+        <Button variant="secondary" size='sm' style={{marginLeft: '12px'}}>
          <Navbar.Brand href="#home">
                         <img
                         src={Logo}

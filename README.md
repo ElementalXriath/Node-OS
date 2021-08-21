@@ -8,7 +8,7 @@ experience with cutting edge functionilty in which users may build a personilzed
 having the same functionality as a home based OS. Requiers little memory and minmal cpu.
 
 Key Features
-- Asyrchronous threading by default to optimize spead and perfomance.
+- Asyrchronous threading by default to optimize speed and perfomance.
 - The OS will implement the same REST concepts as standard JS.
 - The OS will implement state by using ReactJS as the UI standard.
 - The OS is disgned with modes so the user may acess his desktop even when not only

@@ -1,0 +1,48 @@
+ONLINE MODE - OFFLINE MODE - RESTRICTIONS =>
+These modes will be the defining princables when engineering
+a NODEos applications. Offline mode apps must function without the use of external data.
+
+//Buttons Need to be dropdown - array of options directed to ares.
+
+//ui
+-Responsive to precise px to offer mobile xover.
+
+//Apps
+-APPS can be simply links OR npm OR js compatible frameworks. There configs will be held in
+there dir withing conig_{app_id}.js
+
+//sparatic_injections
+-Offline apps will have the ability to be updated. The method will be called
+sparatic injections. If a spartic injection is used in the conifig the offline applications,
+the app will wait for a connection and asynchronsly auto populate required fields.
+
+//Ares
+-Ares will have the ability to switch frameworks from Material to Boostrap.
+-House the ability to change lang schemes
+-Act as a help node from a desktop perspective, a small icon will emerge when ever 
+a function is decalerd that requires communiction with the back end.
+
+// Backend OS_JS
+-All plemenary files for web apps as plugs  via , manual injection ,
+or NODES packet manager ecosysstem. {npm}
+../plugs
+
+-A list of links to web based applications stored by user preference.
+Will be display in the app_view component.
+
+A server.js file that houses all the apis in the obeject. 
+
+... APP 1 OFFLINE MODE -
+CACULATOR -
+
+- OPERATIONS manager will be the default file name for node os apps.
+It will house any and all algos to return the ultimate functionality.
+
+CPU link will be the return put into the stream format to populate the packats 
+passed to ares then the user. 
+
+
+
+
+
+

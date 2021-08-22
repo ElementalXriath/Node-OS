@@ -1,9 +1,12 @@
 import React from 'react';
-import {Button, ButtonGroup} from 'react-bootstrap';
 
+
+import {Button, ButtonGroup} from 'react-bootstrap';
+import  '../../../styling_os/thememusic.css';
 // Calculator HOC 
 
 class Calculator extends React.Component{
+    
     constructor(){
         super()
         this.state = {
@@ -111,61 +114,67 @@ equalVal = () => {
     })
 }   
 
+    
     render(){
         return(
-            <div className="container align-right">
+            <div className="" style={{marginTop: '-5px'}}>
                 <div>         
                     <br/>
+                  <span style={{borderLeft:'1px solid blue', marginBottom:'3px'}}>
+                       <h3>Calculator Pro
+                       </h3>
+                </span>
                     <br/>
                 <div>
                         <input value={this.state.inputVal} type="text" style={{fontSize:"20px",width:"255px",marginLeft:"-10px",height: '40px',backgroundColor:"lightgrey",border:"none",color:"white",fontWeight:"bold",}} onChange={(v) => this.setState({inputVal: v.target.value})} />    
                     <br/>
                     <br/>
-                        <ButtonGroup className="me-2" aria-label="First group">
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue('(')} >(</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.removeLast()}>X</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue2(')')}>)</Button>
+                        <ButtonGroup className='m1' aria-label="First group">
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue('(')} >(</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.removeLast()}>X</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue2(')')}>)</Button>
                             <div style={{width:'20px'}}></div>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick= {this.Closed}>C</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick= {this.Closed}>C</Button>
                         </ButtonGroup>
                 <br/>
-                        <ButtonGroup className="me-2" aria-label="First group">
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue('7')}>7</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue1('8')}>8</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue2('9')}>9</Button>
+                        <ButtonGroup className='m1' aria-label="First group">
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue('7')}>7</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue1('8')}>8</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue2('9')}>9</Button>
                             <div style={{width:'20px'}}></div>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue3('/')}>/</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue3('/')}>/</Button>
                         </ButtonGroup>
                 <br/>
-                        <ButtonGroup className="me-2" aria-label="First group">
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue4('4')}>4</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue5('5')}>5</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue6('6')}>6</Button>
+                        <ButtonGroup className='' aria-label="First group">
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue4('4')}>4</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue5('5')}>5</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue6('6')}>6</Button>
                             <div style={{width:'20px'}}></div>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue7('*')}>*</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue7('*')}>*</Button>
                         </ButtonGroup>
                 <br/>
-                        <ButtonGroup className="me-2" aria-label="First group">
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue8('1')}>1</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue9('2')}>2</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue10('3')}>3</Button>
+                        <ButtonGroup className='' aria-label="First group">
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue8('1')}>1</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue9('2')}>2</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue10('3')}>3</Button>
                             <div style={{width:'20px'}}></div>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue11('-')}>-</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue11('-')}>-</Button>
                         </ButtonGroup>
                 <br/>
-                        <ButtonGroup className="me-2" aria-label="First group">
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue12('0')}>0</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue13('.')}>.</Button>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue14('00')}>00</Button>
+                        <ButtonGroup className='' aria-label="First group">
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue12('0')}>0</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue13('.')}>.</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={() => this.getValue14('00')}>00</Button>
                             <div style={{width:'20px'}}></div>
-                            <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={this.equalVal}>=</Button>
+                            <Button className='calc_btn m-1 bg-dark rounded' onClick={this.equalVal}>=</Button>
                             
                         </ButtonGroup>
                 <br/>
-                <Button style={{margin:'3px', width:'10%', border:'black 2px solid', borderRadius: '3px'}} onClick={() => this.getValue15('+')}>+</Button>
+                <Button className='calc_btn m-2 bg-dark' onClick={() => this.getValue15('+')}>+</Button>
                            
                 </div>
             </div>
+         
         </div>
     );   
   }

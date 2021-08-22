@@ -3,7 +3,10 @@ import { Navbar, OverlayTrigger, Row, Col, Popover, Button } from "react-bootstr
 import Logo from './node-js-icon.png';
 
 //FRAMES_Bozan Main Portal
-import BMF from './bozon/bozonMFPortal';
+
+import LinksSF from "./bozon/component_store/links_os/links_bozon/links_subframe";
+import ToolsSF from "./bozon/component_store/tools_os/tools_bozon/tools_subFrame";
+
 
 
 //Interface_mainWindow
@@ -19,9 +22,12 @@ const INTERFACE = () => {
   var mainFrame_set = mainFrame;
 
   const mode_Tools = () =>{
-    setMainFrame(<BMF/>)
+    setMainFrame(<ToolsSF/>)
   }
   
+  const mode_Links = () =>{
+    setMainFrame(<LinksSF/>)
+  }
 const Core_CSS = {
 
 };
@@ -48,8 +54,14 @@ const Core_CSS = {
                         <br/>
                         <strong>Webb Apps</strong>
                         <br/>
-                        <Button variant="secondary" size="sm" onClick={mode_Tools}>
-                             Links                         
+                        <Button variant="secondary" size="sm" onClick={mode_Links}>
+                             Links                     
+                        </Button>
+                        <br/>
+                        <strong>Media</strong>
+                        <br/>
+                        <Button variant="secondary" size="sm" onClick={mode_Links}>
+                             View                
                         </Button>
                     </Popover.Body>
                 </Popover>

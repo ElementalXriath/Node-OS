@@ -1,0 +1,7 @@
+.calc_btns {
+    margin: '3px';
+    width: '10px';
+    order:' black 2px solid';
+    border-radius:'3px';
+    background-image:' linear-gradient(to right, red, white';
+}

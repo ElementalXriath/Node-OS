@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../../styling_os/thememusic.css';
+
 //Imports for Tools
 import Calculator from '../tool_store/calculator_os/calculator';
 import CalEmit from '../tool_store/calendar/calendar';
@@ -30,9 +32,9 @@ const ToolsSF = () => {
     
     return (
         
-        <div className="container" style={Admin_Theme}>
+        <div className="container m-0 kit_text" style={Admin_Theme}>
 
-             <ul className="nav justify-content-end">
+             <ul className="nav justify-content-end shadow-sm p-3 mb-5 bg-white rounded">
                 <li className="nav-item">
                     <a className="nav-link" onClick={calcMode}>Calculator</a>
                 </li>

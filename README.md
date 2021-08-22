@@ -16,3 +16,7 @@ by storing the previous state and direction it to a local internal node server.
 - The OS will function in unity with the web its self.
 - Reactor is a custom middle ware that handles all logic and fs 
 bewtween client and server.
+
+Front End Features -
+-Ive built a tri archy component structure that shares a parent state with in the interface its self.
+-Open soure ... currently pipelining a data tunnle for npms and streaming services so nodeos can evolve with  third party functionailty inheritance. 

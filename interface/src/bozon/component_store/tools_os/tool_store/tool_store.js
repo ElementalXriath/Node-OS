@@ -7,8 +7,7 @@ var tool_store = {
 
         calculator_001: {
             module: <Calculator/>,
-            frame_dir: 'Calculator-Lite',
-            
+            frame_dir: 'Calculator-Lite'    
         },
 
         otherapp: 'other app'  

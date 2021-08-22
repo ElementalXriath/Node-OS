@@ -1,3 +1,5 @@
 const spectrum_os = {
-    quicken: 'quicken'
+    quicken: 'quicken.com',
 }
+
+export default spectrum_os;

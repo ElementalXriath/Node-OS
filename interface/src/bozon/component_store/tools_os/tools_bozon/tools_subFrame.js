@@ -26,7 +26,7 @@ const ToolsSF = () => {
 
     const calnMode = () => {
         setmodeIn(<CalEmit/>)
-    }
+    };
     
     return (
         

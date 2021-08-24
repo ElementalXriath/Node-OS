@@ -2,8 +2,9 @@ import React from 'react';
 
 //Imports for Links
 
-
 //HOC FRAME for all applictions using its protocal.
+
+//MediaPool
 
 const Admin_Theme = {
     color : 'aqua',
@@ -15,12 +16,20 @@ const Admin_Theme = {
 
 const LinksSF = () => {
 
+
+    const linksSubFrame = () => {
+        return (
+            <div>
+            </div>
+        )
+    };
+
     const [linkuse, setlinkuse] = React.useState('url');
-    const [modeIn, setmodeIn] = React.useState(' demo ')
+    const [modeIn, setmodeIn] = React.useState(linksSubFrame);
 
     const modeInView = linkuse;
 
-    const weatherMode = () => {
+    const fav_1 = () => {
         setmodeIn('url new tab')
     };
 
@@ -30,7 +39,7 @@ const LinksSF = () => {
 
     const stockMode = () => {
         setmodeIn('new url')
-    }
+    };
     
     return (
         
@@ -38,16 +47,16 @@ const LinksSF = () => {
 
              <ul className="nav justify-content-end">
                 <li className="nav-item">
-                    <a className="nav-link" >Amazon</a>
+                    <a className="nav-link">Shopping</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link">News</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" >YouTube</a>
+                    <a className="nav-link">Media</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">Cyrpto Watcher</a>
+                    <a className="nav-link">Games</a>
                 </li>
             </ul>
             

@@ -15,11 +15,19 @@ const Admin_Theme = {
     padding: 0
 };
 
-
 const ToolsSF = () => {
 
-    const [tooluse, settooluse] = React.useState('Calc');
-    const [modeIn, setmodeIn] = React.useState(<Calculator/>)
+    const subFramefacekit = () =>{
+        return(
+             <div>
+                 <div>
+                     Welcome to the DTK. Tools are just a node package away.
+                 </div>
+             </div>
+        )
+    };
+    const [tooluse, settooluse] = React.useState(subFramefacekit);
+    const [modeIn, setmodeIn] = React.useState(tooluse)
 
     const modeInView = tooluse;
     const calcMode = () => {

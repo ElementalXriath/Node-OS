@@ -10,7 +10,7 @@ const cal_wrap = {
 }
 const CalEmit = () => {
     return(    
-           <div className='bg-dark' style={cal_wrap}><Calendar/></div> 
+           <div className='bg-secondary' style={cal_wrap}><Calendar/></div> 
         )
 }
 export default CalEmit;
